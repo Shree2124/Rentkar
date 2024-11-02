@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Optimize Routes
 
-## Getting Started
+A web application for managing and optimizing delivery routes for orders. The application fetches existing orders, displays them in a table, and provides an optimized routing solution to enhance delivery efficiency.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Routes](#api-routes)
+- [Technologies Used](#technologies-used)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Display Existing Orders**: View a list of current orders with customer details.
+- **Optimize Route**: Calculate and display optimized routes for delivery orders.
+- **Loading Spinner**: Indicates route optimization in progress.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com//optimize-routes.git
+    cd optimize-routes
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Environment Variables**:
+    - Set up a `.env` file in the root directory with any necessary environment variables, such as API base URL.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Start the server with `npm run dev`.
+2. Navigate to `http://localhost:3000` in your browser.
+3. The **Optimize Routes** page will display a list of existing orders.
+4. Click on the **Optimize Route** button to calculate and display optimized routes below the existing orders.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## API Routes
+
+- **`GET /api/orders`**: Retrieves a list of existing orders.
+- **`POST /api/optimize`**: Calculates and returns optimized routes for delivery.
+
+## Technologies Used
+
+- Next.js, TypeScript, Tailwind CSS, Axios
+
