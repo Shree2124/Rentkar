@@ -21,7 +21,7 @@ A web application for managing and optimizing delivery routes for orders. The ap
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com//optimize-routes.git
+    git clone https://github.com/Shree2124/Rentkar
     cd optimize-routes
     ```
 
